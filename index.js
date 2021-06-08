@@ -70,8 +70,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    test
+function dogYears(years){
+  return 7 * (years*1);
 }
 
 
