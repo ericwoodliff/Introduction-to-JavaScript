@@ -18,6 +18,13 @@ Do the following:
    HINT: no function required
 */
 
+const votingAge = 18;
+
+if(votingAge >= 18){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -31,7 +38,13 @@ Do the following:
 */
 
 
+let food = 'caviar';
+let taste = 'pitiful';
 
+if(taste === 'pitiful'){
+  food = 'sushi';
+}
+console.log(food);
 
 
 /*
@@ -44,7 +57,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+const danger = '1999';
+console.log(Number(danger));
 /*
 Task 1d - Multiply
  
@@ -150,7 +164,25 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  if(user === Scissors && computer === Paper){
+    return "you win";
+  }else if(computer === Scissors && computer === Paper){
+    return "you lose";
+  }else if(computer === Scissors && user === Scissors || computer === Paper && user === Paper){
+    return "it's a tie"
+  }else if(user === Paper && computer === Rock){
+    return "you win";
+  }else if(computer === Paper && user === Rock){
+    return "you lose";
+  }else if(computer === Paper && user === Paper || computer === Rock && user === Rock){
+    return "it's a tie";
+  }else if(user === Rock && computer === Scissors){
+    return "you win";
+  }else if(computer === Rock && user === Scissors){
+    return "you lose"
+  }else if(computer === Rock && user === Rock || computer === Scissors && user === Scissors){
+    return "it's a tie"
+  }
 }
   
   
